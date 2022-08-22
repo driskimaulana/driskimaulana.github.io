@@ -6,12 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - D'Riski Maulana</title>
 
+    <link rel="icon" type="image/png" href="assets/icon/mylogo.png">
+    
+     <!-- Favicons -->
+     <link href="assets/img/favicon.png" rel="icon">
+     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
     <!-- load css -->
     <link rel="stylesheet" href="style/style.css">
-    <link rel="icon" type="image/png" href="assets/icon/mylogo.png">
-
+    
 </head>
 <body>
+
+    <!-- ======= Mobile nav toggle button ======= -->
+    <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
+    <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+    <!-- ======= Header ======= -->
+    <header id="header" class="d-flex flex-column justify-content-center">
+
+        <nav id="navbar" class="navbar nav-menu">
+        <ul>
+            <li><a href="#home" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+            <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+            <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-extension"></i> <span>Skills</span></a></li>
+            <li><a href="#technology" class="nav-link scrollto"><i class="bx bx-coffee"></i> <span>Technology</span></a></li>
+            <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+            
+        </ul>
+        </nav><!-- .nav-menu -->
+
+    </header><!-- End Header -->
 
     <div class="header-banner" id="home">
         <img src="assets/img/banner.png" alt="banner" width="100%" style="margin-bottom: -10px;">
@@ -29,7 +64,6 @@
                 </a>
                 <a href="https://facebook.com/drMaulana11/">
                     <img src="assets/icon/facebook.png" alt="facebook" class="socmed-icon">
-
                 </a>
                 <a href="https://instagram.com/driskimaulana">
                     <img src="assets/icon/instagram.png" alt="instagram" class="socmed-icon">
@@ -41,16 +75,16 @@
                 </a>
             </div>
         </div>
-    </div>
-
-    <div class="navbar">
-        <div class="navbar-menu">
-            <a href="#home">HOME</a>
-            <a href="#about">ABOUT</a>
-            <a href="#portfolio">PORTFOLIO</a>
-            <a href="">BLOG</a>
+        <div class="cus-navbar">
+            <div class="cus-navbar-menu">
+                <a href="#home">HOME</a>
+                <a href="#about">ABOUT</a>
+                <a href="#portfolio">PORTFOLIO</a>
+                <a href="">BLOG</a>
+            </div>
         </div>
     </div>
+
 
     <div class="main-content">
         <div class="about" id="about">
@@ -60,11 +94,25 @@
             <div class="about-desc">
                 <p class="about-desc-title">About Me</p>
                 <div class="about-socmed social-media">
-                    <img src="assets/icon/mail.png" alt="mail" class="socmed-icon">
-                    <img src="assets/icon/linkedin.png" alt="linkedin" class="socmed-icon">
-                    <img src="assets/icon/facebook.png" alt="facebook" class="socmed-icon">
-                    <img src="assets/icon/instagram.png" alt="instagram" class="socmed-icon">
-                    <img src="assets/icon/github.png" alt="github" class="socmed-icon">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=driskimaulana@upi.edu">
+
+                        <img src="assets/icon/mail.png" alt="mail" class="socmed-icon">
+                    </a>
+                    <a href="https://www.linkedin.com/in/driskimaulana/">
+                        <img src="assets/icon/linkedin.png" alt="linkedin" class="socmed-icon">
+    
+                    </a>
+                    <a href="https://facebook.com/drMaulana11/">
+                        <img src="assets/icon/facebook.png" alt="facebook" class="socmed-icon">
+                    </a>
+                    <a href="https://instagram.com/driskimaulana">
+                        <img src="assets/icon/instagram.png" alt="instagram" class="socmed-icon">
+    
+                    </a>
+                    <a href="https://github.com/driskimaulana">
+                        <img src="assets/icon/github.png" alt="github" class="socmed-icon">
+    
+                    </a>
 
                 </div>
                 <p class="about-desc-me">
@@ -79,7 +127,7 @@
             </div>
         </div>
 
-        <div class="skills">
+        <div class="skills" id="skills">
             <p class="about-desc-title">Skills</p>
             <div class="skill-list">
                 <div class="outer">
@@ -106,9 +154,12 @@
                 </div>
 
             </div>
+
+
+
         </div>
 
-        <div class="tech">
+        <div class="tech" id="technology">
             <p class="about-desc-title">Technology Used</p>
             <div class="tech-list">
                 <div class="tech-row">
@@ -182,62 +233,65 @@
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="portfolio" id="portfolio">
-        <p class="about-desc-title">Portfolio</p>
-        <div class="portfolio-list">
-            <div class="portfolio-item">
-                <img src="assets/img/covidinfo.png" alt="covid info app">
-                <div class="portfolio-desc img-left">
-                    <p class="portfolio-desc-title">Covid Info - Android Application</p>
-                    <p class="portfolio-desc-full">Flutter Application that shows Covid-19 case info around the world</p>
-                    <div class="about-socmed social-media">
-                        <img src="assets/icon/flutter.png" alt="flutter" >
-                        <img src="assets/icon/api.png" alt="api"  width="40px">
-                    </div>
-                </div>
-            </div>
-            
-            <div class="portfolio-item">
-                <div class="portfolio-desc img-right">
-                    <p class="portfolio-desc-title">D’Library Management System</p>
-                    <p class="portfolio-desc-full">Library management system made by Codeigniter4 and MySQL.</p>
-                    <div class="about-socmed social-media">
-                        <img src="assets/icon/html.png" alt="flutter" >
-                        <img src="assets/icon/css.png" alt="api" >
-                        <img src="assets/icon/ci.png" alt="api" >
-                    </div>
-                </div>
-                <img src="assets/img/lms.png" alt="library management system">
-            </div>
 
-            <div class="portfolio-item">
-                <img src="assets/img/futurehop.png" alt="future hop">
-                <div class="portfolio-desc img-left">
-                    <p class="portfolio-desc-title">Future Hop</p>
-                    <p class="portfolio-desc-full">Hopper game created using Java Programming Language with MySQL database.</p>
-                    <div class="about-socmed social-media">
-                        <img src="assets/icon/java.png" alt="java">
-                        <img src="assets/icon/mysql.png" alt="mysql">
+
+        <div class="portfolio" id="portfolio">
+            <p class="about-desc-title">Portfolio</p>
+            <div class="portfolio-list">
+                <div class="portfolio-item">
+                    <img src="assets/img/covidinfo.png" alt="covid info app">
+                    <div class="portfolio-desc img-left">
+                        <p class="portfolio-desc-title">Covid Info - Android Application</p>
+                        <p class="portfolio-desc-full">Flutter Application that shows Covid-19 case info around the world</p>
+                        <div class="about-socmed social-media">
+                            <img src="assets/icon/flutter.png" alt="flutter" >
+                            <img src="assets/icon/api.png" alt="api"  width="40px">
+                        </div>
                     </div>
                 </div>
-            </div>
-            
-            <div class="portfolio-item">
-                <div class="portfolio-desc img-right">
-                    <p class="portfolio-desc-title">Wonderful Indonesia </p>
-                    <p class="portfolio-desc-full">Android Application that shows list of tourist attraction.</p>
-                    <div class="about-socmed social-media">
-                        <img src="assets/icon/kotlin.png" alt="kotlin">
+                
+                <div class="portfolio-item">
+                    <div class="portfolio-desc img-right">
+                        <p class="portfolio-desc-title">D’Library Management System</p>
+                        <p class="portfolio-desc-full">Library management system made by Codeigniter4 and MySQL.</p>
+                        <div class="about-socmed social-media">
+                            <img src="assets/icon/html.png" alt="flutter" >
+                            <img src="assets/icon/css.png" alt="api" >
+                            <img src="assets/icon/ci.png" alt="api" >
+                        </div>
+                    </div>
+                    <img src="assets/img/lms.png" alt="library management system">
+                </div>
+    
+                <div class="portfolio-item">
+                    <img src="assets/img/futurehop.png" alt="future hop">
+                    <div class="portfolio-desc img-left">
+                        <p class="portfolio-desc-title">Future Hop</p>
+                        <p class="portfolio-desc-full">Hopper game created using Java Programming Language with MySQL database.</p>
+                        <div class="about-socmed social-media">
+                            <img src="assets/icon/java.png" alt="java">
+                            <img src="assets/icon/mysql.png" alt="mysql">
+                        </div>
                     </div>
                 </div>
-                <img src="assets/img/wonderland.png" alt="wonderful indonesia">
+                
+                <div class="portfolio-item">
+                    <div class="portfolio-desc img-right">
+                        <p class="portfolio-desc-title">Wonderful Indonesia </p>
+                        <p class="portfolio-desc-full">Android Application that shows list of tourist attraction.</p>
+                        <div class="about-socmed social-media">
+                            <img src="assets/icon/kotlin.png" alt="kotlin">
+                        </div>
+                    </div>
+                    <img src="assets/img/wonderland.png" alt="wonderful indonesia">
+                </div>
+                
             </div>
-            
+    
         </div>
-
     </div>
+
     
     
     <footer>
@@ -245,6 +299,21 @@
           &copy;2022 | D'Riski Maulana 
         </p>
     </footer>
+
+    
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
 
 </body>
 </html>
