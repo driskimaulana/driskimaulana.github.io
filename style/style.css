@@ -170,6 +170,16 @@ Floating Navbar
 */
 /*//////////////////////////////////*/
 
+
+@media only screen and (max-width: 600px){
+  #navbar {
+    z-index: 9999 !important;
+  }
+  .header-banner {
+    z-index: 0 !important;
+  }
+}
+
 #navbar {
   z-index: 0;
 }
@@ -206,7 +216,7 @@ Floating Navbar
   transition: 0.3s;
   font-size: 15px;
   border-radius: 50px;
-  background: #756f6f;
+  background: #fbf8f3;
   height: 56px;
   width: 100%;
   overflow: hidden;
@@ -323,7 +333,7 @@ END COMPONENT
 @media only screen and (max-width: 600px){
   
   .main-content {
-    margin: 100px 10% !important;
+    margin: 50px 10% !important;
     /* position: relative; */
     display: flex;
     flex-direction: column;
@@ -508,7 +518,7 @@ END COMPONENT
   }
 
   .tech-list {
-    margin-top: 10px !important;
+    margin-top: 0px !important;
   }
 
   .tech-item {
@@ -569,7 +579,7 @@ END COMPONENT
 }
 
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px){ 
 
   .portfolio {
     margin: 0px 20px !important;
@@ -589,6 +599,10 @@ END COMPONENT
 
   .portfolio-desc img {
     width: 15px !important;
+  }
+
+  .portfolio-list {
+    margin-top: 0px !important;
   }
 
 }
